@@ -1,0 +1,30 @@
+{
+  "name": "alnoor-marketing-portfolio",
+  "version": "1.0.0",
+  "description": "Al-Noor Marketing Portfolio Website - Diaaeddin's professional portfolio showcasing digital marketing and design services",
+  "main": "public/index.html",
+  "scripts": {
+    "serve": "firebase serve",
+    "deploy": "firebase deploy",
+    "build": "echo 'No build step required for static site'",
+    "test": "firebase serve"
+  },
+  "keywords": [
+    "portfolio",
+    "marketing",
+    "design",
+    "firebase",
+    "website"
+  ],
+  "author": "Diaaeddin <diaaeddin.me@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/alnoor-marketing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/alnoor-marketing/issues",
+    "email": "diaaeddin.me@gmail.com"
+  },
+  "homepage": "https://alnoor-marketing.web.app"
+}

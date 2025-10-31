@@ -1,0 +1,89 @@
+<!-- 
+===========================================
+EMAILJS CONFIGURATIE INSTRUCTIES
+===========================================
+
+Om het contactformulier te activeren:
+
+1. Ga naar https://www.emailjs.com/ en maak een gratis account
+2. Maak een nieuwe Email Service (bijv. Gmail)
+3. Maak een Email Template met deze variabelen:
+   - {{from_name}}
+   - {{from_email}}
+   - {{phone}}
+   - {{message}}
+   - {{to_name}}
+
+4. Vervang in public/js/main.js (regel 6-8):
+   const EMAILJS_PUBLIC_KEY = 'JOUW_PUBLIC_KEY_HIER';
+   const EMAILJS_SERVICE_ID = 'JOUW_SERVICE_ID_HIER';
+   const EMAILJS_TEMPLATE_ID = 'JOUW_TEMPLATE_ID_HIER';
+
+===========================================
+AFBEELDINGEN TOEVOEGEN
+===========================================
+
+Plaats deze bestanden in public/images/:
+
+VEREIST:
+- diaaeddin.jpg (je profiel foto)
+- project-1.jpg tot project-4.jpg (project afbeeldingen)
+- client-1.jpg tot client-3.jpg (klant foto's)
+- favicon.png (website icoon)
+
+TIJDELIJKE AFBEELDINGEN:
+- Gebruik https://unsplash.com/ of https://pexels.com/
+- Zoek op: "professional", "business", "marketing", "design"
+
+===========================================
+SOCIAL MEDIA LINKS BIJWERKEN
+===========================================
+
+In public/index.html, zoek naar "social-links" (regel ~470) en update:
+
+<a href="JOUW_LINKEDIN_URL" class="social-link">
+<a href="JOUW_TWITTER_URL" class="social-link">
+<a href="JOUW_INSTAGRAM_URL" class="social-link">
+<a href="JOUW_FACEBOOK_URL" class="social-link">
+
+===========================================
+KLEUREN AANPASSEN
+===========================================
+
+In public/css/style.css (regel 6-11), wijzig:
+
+--primary-color: #6366f1;
+--primary-dark: #4f46e5;
+--primary-light: #818cf8;
+--secondary-color: #8b5cf6;
+--accent-color: #ec4899;
+
+===========================================
+FIREBASE DEPLOYMENT
+===========================================
+
+EERST:
+npm install -g firebase-tools
+firebase login
+
+DAN:
+firebase init hosting
+(Kies: public directory, single-page app: Yes, overwrite: No)
+
+DEPLOY:
+firebase deploy
+
+===========================================
+LOKAAL TESTEN
+===========================================
+
+firebase serve
+
+Open dan: http://localhost:5000
+
+===========================================
+
+Voor meer details, zie README.md
+
+===========================================
+-->
