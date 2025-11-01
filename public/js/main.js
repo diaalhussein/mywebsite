@@ -2,7 +2,7 @@
 // Initialize EmailJS
 // ===================================
 // EmailJS Configuration - Connected to diaaeddin.me@gmail.com
-const EMAILJS_PUBLIC_KEY = 'WJzVKRy1teNCAqZZu';
+const EMAILJS_PUBLIC_KEY = 'VRgFHVT2r9TH_faja';
 const EMAILJS_SERVICE_ID = 'service_hiwpo9l';
 const EMAILJS_TEMPLATE_ID = 'template_ekeykgc';
 
