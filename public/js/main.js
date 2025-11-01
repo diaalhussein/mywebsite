@@ -1,16 +1,18 @@
 // ===================================
 // Initialize EmailJS
 // ===================================
-// Replace these with your actual EmailJS credentials
-// Get them from: https://www.emailjs.com/
-const EMAILJS_PUBLIC_KEY = 'YOUR_EMAILJS_PUBLIC_KEY';
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+// EmailJS Configuration - Connected to diaaeddin.me@gmail.com
+const EMAILJS_PUBLIC_KEY = 'WJzVKRy1teNCAqZZu';
+const EMAILJS_SERVICE_ID = 'service_hiwpo9l';
+const EMAILJS_TEMPLATE_ID = 'template_ekeykgc';
 
 // Initialize EmailJS
 (function() {
     if (typeof emailjs !== 'undefined') {
         emailjs.init(EMAILJS_PUBLIC_KEY);
+        console.log('✅ EmailJS initialized successfully!');
+    } else {
+        console.error('❌ EmailJS SDK not loaded');
     }
 })();
 
