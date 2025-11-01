@@ -188,20 +188,20 @@ contactForm.addEventListener('submit', async (e) => {
     
     // Name validation
     if (name.length < 2) {
-        showError('nameError', 'Naam moet minimaal 2 karakters bevatten');
+        showError('nameError', 'Name must be at least 2 characters');
         isValid = false;
     }
     
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-        showError('emailError', 'Voer een geldig e-mailadres in');
+        showError('emailError', 'Please enter a valid email address');
         isValid = false;
     }
     
     // Message validation
     if (message.length < 10) {
-        showError('messageError', 'Bericht moet minimaal 10 karakters bevatten');
+        showError('messageError', 'Message must be at least 10 characters');
         isValid = false;
     }
     
@@ -222,7 +222,7 @@ contactForm.addEventListener('submit', async (e) => {
             // For demo purposes - simulate email sending
             await new Promise(resolve => setTimeout(resolve, 1500));
             
-            showFormMessage('success', 'Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op. (Demo Mode - EmailJS niet geconfigureerd)');
+            showFormMessage('success', 'Thank you for your message! We will contact you as soon as possible. (Demo Mode - EmailJS not configured)');
             contactForm.reset();
         } else {
             // Send email using EmailJS
@@ -230,7 +230,7 @@ contactForm.addEventListener('submit', async (e) => {
                 to_email: 'diaaeddin.me@gmail.com',
                 from_name: name,
                 from_email: email,
-                phone: phone || 'Niet opgegeven',
+                phone: phone || 'Not provided',
                 message: message,
                 reply_to: email
             };
@@ -246,16 +246,16 @@ contactForm.addEventListener('submit', async (e) => {
             console.log('EmailJS Response:', response);
             
             if (response.status === 200) {
-                showFormMessage('success', '✅ Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.');
+                showFormMessage('success', '✅ Thank you for your message! We will contact you as soon as possible.');
                 contactForm.reset();
             } else {
-                throw new Error('Email verzenden mislukt');
+                throw new Error('Failed to send email');
             }
         }
     } catch (error) {
         console.error('❌ EmailJS Error:', error);
         console.error('Error details:', error.text || error.message);
-        showFormMessage('error', 'Er is iets misgegaan. Probeer het later opnieuw of neem direct contact met ons op.');
+        showFormMessage('error', 'Something went wrong. Please try again later or contact us directly.');
     } finally {
         // Reset button state
         btnText.style.display = 'inline-block';
