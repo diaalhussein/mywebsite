@@ -230,9 +230,10 @@ contactForm.addEventListener('submit', async (e) => {
                 from_name: name,
                 from_email: email,
                 phone: phone || 'Niet opgegeven',
-                message: message,
-                to_name: 'Diaaeddin'
+                message: message
             };
+            
+            console.log('Sending email with params:', templateParams);
             
             const response = await emailjs.send(
                 EMAILJS_SERVICE_ID,
@@ -240,15 +241,18 @@ contactForm.addEventListener('submit', async (e) => {
                 templateParams
             );
             
+            console.log('EmailJS Response:', response);
+            
             if (response.status === 200) {
-                showFormMessage('success', 'Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.');
+                showFormMessage('success', '✅ Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.');
                 contactForm.reset();
             } else {
                 throw new Error('Email verzenden mislukt');
             }
         }
     } catch (error) {
-        console.error('Error:', error);
+        console.error('❌ EmailJS Error:', error);
+        console.error('Error details:', error.text || error.message);
         showFormMessage('error', 'Er is iets misgegaan. Probeer het later opnieuw of neem direct contact met ons op.');
     } finally {
         // Reset button state
