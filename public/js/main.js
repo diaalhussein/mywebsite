@@ -227,10 +227,12 @@ contactForm.addEventListener('submit', async (e) => {
         } else {
             // Send email using EmailJS
             const templateParams = {
+                to_email: 'diaaeddin.me@gmail.com',
                 from_name: name,
                 from_email: email,
                 phone: phone || 'Niet opgegeven',
-                message: message
+                message: message,
+                reply_to: email
             };
             
             console.log('Sending email with params:', templateParams);
