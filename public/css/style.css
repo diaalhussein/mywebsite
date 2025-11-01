@@ -378,6 +378,118 @@ h1, h2, h3, h4, h5, h6 {
     animation: fadeInUp 1s ease-out 0.4s backwards;
 }
 
+/* Hero Profile Image with Floating Icons */
+.hero-profile-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+}
+
+.hero-profile-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(81, 112, 254, 0.3);
+}
+
+.hero-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-border {
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    z-index: -1;
+    animation: rotateBorder 10s linear infinite;
+}
+
+@keyframes rotateBorder {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Floating Skill Icons */
+.floating-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    animation: float 3s ease-in-out infinite;
+    transition: all 0.3s ease;
+}
+
+.floating-icon:hover {
+    transform: scale(1.2) translateY(-5px);
+    box-shadow: 0 12px 30px rgba(81, 112, 254, 0.3);
+    background: var(--primary-color);
+    color: white;
+}
+
+.floating-icon-1 {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0s;
+}
+
+.floating-icon-2 {
+    top: 20%;
+    right: -20px;
+    animation-delay: 0.5s;
+}
+
+.floating-icon-3 {
+    bottom: 20%;
+    right: -10px;
+    animation-delay: 1s;
+}
+
+.floating-icon-4 {
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 1.5s;
+}
+
+.floating-icon-5 {
+    bottom: 20%;
+    left: -10px;
+    animation-delay: 2s;
+}
+
+.floating-icon-6 {
+    top: 20%;
+    left: -20px;
+    animation-delay: 2.5s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 .hero-buttons {
     display: flex;
     gap: var(--spacing-md);
@@ -1199,6 +1311,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+    .hero-profile-wrapper {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .floating-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .floating-icon-2,
+    .floating-icon-6 {
+        right: -10px;
+        left: -10px;
+    }
+    
     .nav-menu {
         position: fixed;
         top: 70px;
