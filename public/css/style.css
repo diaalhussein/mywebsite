@@ -1468,3 +1468,79 @@ h1, h2, h3, h4, h5, h6 {
 .mb-1 { margin-bottom: var(--spacing-sm); }
 .mb-2 { margin-bottom: var(--spacing-md); }
 .mb-3 { margin-bottom: var(--spacing-lg); }
+
+/* ===================================
+   Professional Profile Enhancements
+   =================================== */
+.profile-highlights{padding:0 0 var(--spacing-xl);background:var(--bg-secondary);position:relative;z-index:2}
+.highlight-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--spacing-md)}
+.highlight-card{background:#fff;padding:var(--spacing-lg) var(--spacing-md);border:1px solid rgba(81,112,254,.08);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);text-align:center;transition:var(--transition-base)}
+.highlight-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl)}
+.highlight-icon,.info-icon{width:58px;height:58px;margin:0 auto var(--spacing-md);display:flex;align-items:center;justify-content:center;border-radius:var(--radius-lg);background:rgba(81,112,254,.1);color:var(--primary-color);font-size:1.4rem}
+.highlight-card h3{margin-bottom:var(--spacing-xs);font-size:1.15rem}
+.highlight-card p,.info-card p{color:var(--text-secondary);line-height:1.75}
+.experience{padding:var(--spacing-xl) 0;background:#fff}
+.timeline{position:relative;max-width:980px;margin:0 auto}
+.timeline::before{content:'';position:absolute;left:22px;top:0;bottom:0;width:2px;background:rgba(81,112,254,.18)}
+.timeline-item{position:relative;padding-left:64px;margin-bottom:var(--spacing-lg)}
+.timeline-item:last-child{margin-bottom:0}
+.timeline-dot{position:absolute;left:0;top:4px;width:46px;height:46px;border-radius:50%;background:#fff;border:2px solid rgba(81,112,254,.2);color:var(--primary-color);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);z-index:1}
+.timeline-item.featured .timeline-dot{background:var(--gradient-primary);color:#fff;border-color:transparent}
+.timeline-card,.info-card,.cert-card{background:#fff;border:1px solid #e5e7eb;border-radius:var(--radius-xl);box-shadow:var(--shadow-sm);transition:var(--transition-base)}
+.timeline-card{padding:var(--spacing-lg)}
+.timeline-card:hover,.info-card:hover,.cert-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:rgba(81,112,254,.22)}
+.timeline-top{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--spacing-md);margin-bottom:var(--spacing-sm)}
+.timeline-card h3,.info-card h3,.cert-card h3{font-size:1.35rem;margin-bottom:.35rem}
+.timeline-period,.card-period,.cert-date{display:inline-block;font-size:.85rem;font-weight:700;color:var(--primary-color);margin-bottom:.35rem;letter-spacing:.02em}
+.timeline-company,.card-subtitle{color:var(--text-secondary);font-weight:600;margin-bottom:var(--spacing-sm)}
+.timeline-card>p,.info-card>p{color:var(--text-secondary);line-height:1.8}
+.timeline-badge{flex-shrink:0;padding:.45rem .8rem;background:rgba(81,112,254,.1);color:var(--primary-color);border-radius:999px;font-size:.8rem;font-weight:700}
+.tag-list{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:var(--spacing-md)}
+.education,.certifications{padding:var(--spacing-xl) 0}
+.education{background:var(--bg-secondary)}
+.certifications{background:#fff}
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--spacing-lg)}
+.cards-grid.two-col{grid-template-columns:repeat(2,1fr);max-width:980px;margin:0 auto}
+.info-card{padding:var(--spacing-lg)}
+.info-icon{margin-left:0}
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--spacing-md)}
+.cert-card{display:flex;gap:var(--spacing-md);padding:var(--spacing-md);align-items:flex-start}
+.cert-logo{width:70px;min-width:70px;height:70px;border-radius:var(--radius-lg);background:#f3f4f6;color:#111827;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800;letter-spacing:.05em;border:1px solid #e5e7eb}
+.cert-logo.ithaka{font-size:.7rem}
+.cert-content{min-width:0}
+.cert-content h3{font-size:1.05rem;line-height:1.35}
+.cert-content p{color:var(--text-secondary);font-size:.92rem;line-height:1.65}
+.cert-id{display:block;margin-top:.65rem;color:var(--text-light);font-size:.8rem}
+.skills-section{padding:var(--spacing-xl) 0;background:var(--bg-secondary)}
+.skill-cloud{max-width:1000px;margin:0 auto;display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem}
+.skill-cloud span{display:inline-flex;align-items:center;min-height:40px;padding:.6rem .95rem;border:1px solid rgba(81,112,254,.18);background:#fff;border-radius:999px;color:var(--text-secondary);font-size:.92rem;font-weight:600;box-shadow:var(--shadow-sm)}
+.skill-cloud span:hover{color:var(--primary-color);transform:translateY(-2px)}
+.recommendation-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--spacing-lg)}
+.recommendation-card{height:100%;border:1px solid #e5e7eb}
+.recommendation-card .testimonial-rating{color:var(--primary-color)}
+.author-placeholder{background:rgba(81,112,254,.1);color:var(--primary-color);display:flex;align-items:center;justify-content:center}
+.recommendation-card .testimonial-text{font-style:normal;font-size:1rem}
+.testimonials .testimonial-controls{display:none}
+.hero-name{font-size:clamp(2.8rem,7vw,4.8rem)}
+.hero-motto{text-transform:none;letter-spacing:.02em}
+@media (max-width:1024px){
+ .highlight-grid,.cert-grid{grid-template-columns:repeat(2,1fr)}
+ .cards-grid{grid-template-columns:repeat(2,1fr)}
+ .nav-menu{gap:1rem}
+}
+@media (max-width:768px){
+ .highlight-grid,.cards-grid,.cards-grid.two-col,.cert-grid,.recommendation-grid{grid-template-columns:1fr}
+ .timeline::before{left:19px}
+ .timeline-item{padding-left:54px}
+ .timeline-dot{width:40px;height:40px}
+ .timeline-top{flex-direction:column;align-items:flex-start}
+ .timeline-badge{align-self:flex-start}
+ .cert-card{padding:var(--spacing-md)}
+ .hero{min-height:auto}
+ .hero-label{padding:.6rem 1rem}
+}
+@media (max-width:480px){
+ .highlight-card,.info-card,.timeline-card,.cert-card,.service-card{padding:var(--spacing-md)}
+ .cert-logo{width:58px;min-width:58px;height:58px}
+ .hero-name{font-size:2.2rem}
+}
