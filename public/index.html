@@ -1,665 +1,830 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Al-Noor Marketing by Diaaeddin - Design, Marketing & Technology for small businesses">
-    <meta name="keywords" content="marketing, design, website development, SEO, social media">
-    <meta name="author" content="Diaaeddin">
-    <title>Diaaeddin | Al-Noor Marketing - Design • Marketing • Technology</title>
-    
-    <!-- Favicon -->
+    <meta name="description" content="Diaaeddin Alhussein – AV & ICT Integrator, technische installatie, ICT-support, digitale oplossingen en community support.">
+    <meta name="keywords" content="Diaaeddin Alhussein, AV ICT, ICT Support, technische installatie, audiovisual, Rotterdam, digital solutions">
+    <meta name="author" content="Diaaeddin Alhussein">
+    <meta property="og:title" content="Diaaeddin Alhussein | AV & ICT Integrator">
+    <meta property="og:description" content="Professioneel profiel van Diaaeddin Alhussein – AV/ICT, technische installatie, ICT-support en digitale oplossingen.">
+    <meta property="og:type" content="website">
+    <title>Diaaeddin Alhussein | AV & ICT Integrator</title>
+
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-wrapper">
                 <a href="#home" class="logo">
-                    <div style="display: flex; align-items: center; gap: 0.3rem;">
-                        <span class="logo-platform">Platform</span>
-                        <span class="logo-text">Diaaeddin</span>
-                    </div>
-                    <span class="logo-subtitle">Al-Noor Marketing</span>
+                    <span class="logo-text">Diaaeddin Alhussein</span>
+                    <span class="logo-subtitle">AV • ICT • Technology</span>
                 </a>
-                
-                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu openen/sluiten">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                
+
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#volunteer" class="nav-link">Volunteer Work</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#about" class="nav-link">Over mij</a></li>
+                    <li><a href="#experience" class="nav-link">Ervaring</a></li>
+                    <li><a href="#education" class="nav-link">Opleiding</a></li>
+                    <li><a href="#certifications" class="nav-link">Certificaten</a></li>
+                    <li><a href="#volunteer" class="nav-link">Vrijwilligerswerk</a></li>
+                    <li><a href="#reviews" class="nav-link">Aanbevelingen</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#contact" class="btn btn-primary">Free Consultation</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-background">
-            <div class="gradient-overlay"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content" data-aos="fade-up">
-                <h1 class="hero-title">
-                    <span class="hero-name">Diaaeddin Alhussein</span>
-                    <span class="hero-motto">Design • Marketing • Technologie • Impact</span>
-                    <span class="hero-tagline">Community Support Professional | Educational ICT Assistant | Creative Media & Frontend Developer</span>
-                </h1>
-                <p class="hero-description">
-                    CEO of Al-Noor Marketing, passionate about supporting communities through technology, design, and digital marketing. I help businesses and organizations grow with creative frontend solutions, technical expertise, and strategic digital marketing.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary btn-lg">Free Consultation</a>
-                    <a href="#portfolio" class="btn btn-secondary btn-lg">Portfolio & Case Studies</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-                        <div class="stat-number">4+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="stat-number">5</div>
-                        <div class="stat-label">Active Volunteer Roles</div>
-                    </div>
-                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
-                        <div class="stat-number">CEO</div>
-                        <div class="stat-label">Al-Noor Marketing</div>
-                    </div>
-                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
-                        <div class="stat-number">MBO</div>
-                        <div class="stat-label">Student</div>
-                    </div>
-                </div>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="gradient-overlay"></div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about" class="scroll-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <div class="hero-label"><i class="fas fa-bolt"></i> AV & ICT • Technische installatie • Digitale ondersteuning</div>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <img src="images/diaaeddin.jpg" alt="Diaaeddin" class="profile-img">
-                    <div class="image-decoration"></div>
-                </div>
-                <div class="about-text" data-aos="fade-left">
-                    <span class="section-label">About Me</span>
-                    <h2 class="section-title">Bridging Technology, Design & Community</h2>
-                    <p class="about-description">
-                        I'm <strong>Diaaeddin Alhussein</strong>, CEO of <strong>Al-Noor Marketing</strong> — a motivated Educational ICT Assistant and Creative/Digital Marketing Software Developer with experience in frontend development, technical support, and community engagement. I actively help students and teachers solve technical problems while managing volunteer projects across Rotterdam.
+                    <h1 class="hero-title">
+                        <span class="hero-name">Diaaeddin Alhussein</span>
+                        <span class="hero-motto">AV & ICT Integrator</span>
+                        <span class="hero-tagline">Technische installatie • ICT Support • AV-techniek • Digitale oplossingen</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Ik ben een gemotiveerde en leergierige ICT-professional uit Rotterdam. Ik combineer technische vaardigheden met communicatie, creativiteit en maatschappelijke betrokkenheid. Mijn huidige focus ligt op AV/ICT-integratie, technische installatie, ICT-support en verdere ontwikkeling binnen technologie.
                     </p>
-                    <p class="about-description">
-                        Currently studying at <strong>Albeda College</strong> (preparing for final MBO & HBO opleiding) in the Onderwijs-ICT-assistent track, I completed the "Arbeitsmarkt Fit" program at Ithaka Academie. My internship as an Educational ICT Assistant (November 2024 – August 2025) provides hands-on experience in classroom technical support and digital tools implementation.
-                    </p>
-                    <p class="about-description">
-                        Through <strong>Al-Noor Marketing</strong>, I combine my skills in <strong>graphic design</strong> (Photoshop, Illustrator, Canva), <strong>frontend development</strong> (HTML, CSS, JavaScript), <strong>social media marketing</strong>, <strong>web development</strong> (WordPress), and Google Maps business management. I'm an active volunteer with <strong>BuurtBuik</strong>, <strong>Gelukswandelingen</strong>, and youth organizations, plus I mentor SMEs (restaurants, shops) to grow their digital presence.
-                    </p>
-                    <div class="about-skills">
-                        <div class="skill-tag"><i class="fas fa-language"></i> Dutch (B1-B2)</div>
-                        <div class="skill-tag"><i class="fas fa-language"></i> English (A1)</div>
-                        <div class="skill-tag"><i class="fas fa-language"></i> Arabic (Native)</div>
-                    </div>
-                    <a href="#contact" class="btn btn-primary">Let's Work Together</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Volunteer Work Section -->
-    <section class="volunteer" id="volunteer">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-label">Volunteer Work</span>
-                <h2 class="section-title">My Contribution to the Community</h2>
-                <p class="section-description">Passion for making a difference through meaningful volunteer work</p>
-            </div>
-            
-            <div class="volunteer-grid">
-                <!-- Volunteer Item 1 -->
-                <div class="volunteer-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="volunteer-image">
-                        <img src="images/volunteer-1.jpg" alt="Nieuw Thuis Rotterdam">
-                        <div class="volunteer-overlay"></div>
+                    <div class="hero-buttons">
+                        <a href="https://www.linkedin.com/in/diaaeddin-alhussein/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn-profiel
+                        </a>
+                        <a href="#contact" class="btn btn-secondary btn-lg">Neem contact op</a>
                     </div>
-                    <div class="volunteer-content">
-                        <div class="volunteer-badge">2024-2025</div>
-                        <h3 class="volunteer-title">Participation Assistant</h3>
-                        <p class="volunteer-description">Helping newcomers with participation activities, language lessons, and integration projects at school and in the community. Supporting the organization of activities and maintaining contact with participants.</p>
-                        <div class="volunteer-meta">
-                            <span class="volunteer-org"><i class="fas fa-building"></i> Nieuw Thuis Rotterdam</span>
-                            <span class="volunteer-duration"><i class="fas fa-clock"></i> August 2024 - October 2025</span>
+
+                    <div class="hero-stats">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="stat-number">2Orange</div>
+                            <div class="stat-label">Huidige AV & ICT-rol</div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Volunteer Item 2 -->
-                <div class="volunteer-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="volunteer-image">
-                        <img src="images/volunteer-2.jpg" alt="Gelukswandelingen">
-                        <div class="volunteer-overlay"></div>
-                    </div>
-                    <div class="volunteer-content">
-                        <div class="volunteer-badge">Ongoing</div>
-                        <h3 class="volunteer-title">Elderly Care Volunteer</h3>
-                        <p class="volunteer-description">Keeping elderly people company in care homes and helping during walks and activities. Providing support and a listening ear where needed.</p>
-                        <div class="volunteer-meta">
-                            <span class="volunteer-org"><i class="fas fa-building"></i> Gelukswandelingen</span>
-                            <span class="volunteer-duration"><i class="fas fa-clock"></i> June 2024 - Present</span>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Extron-certificaten</div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Volunteer Item 3 -->
-                <div class="volunteer-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="volunteer-image">
-                        <img src="images/volunteer-3.jpg" alt="BuurtBuik">
-                        <div class="volunteer-overlay"></div>
-                    </div>
-                    <div class="volunteer-content">
-                        <div class="volunteer-badge">Ongoing</div>
-                        <h3 class="volunteer-title">Community Kitchen Volunteer</h3>
-                        <p class="volunteer-description">Helping prepare and serve meals for local residents and people with limited budgets. Working with the team to reduce food waste and create a welcoming atmosphere during meals.</p>
-                        <div class="volunteer-meta">
-                            <span class="volunteer-org"><i class="fas fa-building"></i> BuurtBuik</span>
-                            <span class="volunteer-duration"><i class="fas fa-clock"></i> July 2023 - Present</span>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Technische & sociale skills</div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Volunteer Item 4 -->
-                <div class="volunteer-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="volunteer-image">
-                        <img src="images/volunteer-4.jpg" alt="Business Mentoring">
-                        <div class="volunteer-overlay"></div>
-                    </div>
-                    <div class="volunteer-content">
-                        <div class="volunteer-badge">Ongoing</div>
-                        <h3 class="volunteer-title">SME Business Mentoring</h3>
-                        <p class="volunteer-description">Providing business mentoring and digital marketing support for small and medium enterprises (restaurants, shops). Helping with social media presence, Google Maps business listings, and online marketing strategies.</p>
-                        <div class="volunteer-meta">
-                            <span class="volunteer-org"><i class="fas fa-building"></i> Independent</span>
-                            <span class="volunteer-duration"><i class="fas fa-clock"></i> Ongoing</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Volunteer Item 5 -->
-                <div class="volunteer-item" data-aos="fade-up" data-aos-delay="500">
-                    <div class="volunteer-image">
-                        <img src="images/volunteer-5.jpg" alt="Syrian Student Union Volunteer">
-                        <div class="volunteer-overlay"></div>
-                    </div>
-                    <div class="volunteer-content">
-                        <div class="volunteer-badge">2024-2025</div>
-                        <h3 class="volunteer-title">Student Union Volunteer</h3>
-                        <p class="volunteer-description">Active member at Syrian Student Union in the Netherlands, helping organize student activities, events, and supporting fellow students with academic and social integration initiatives.</p>
-                        <div class="volunteer-meta">
-                            <span class="volunteer-org"><i class="fas fa-building"></i> Syrian Student Union in the Netherlands</span>
-                            <span class="volunteer-duration"><i class="fas fa-clock"></i> 2024 - 2025</span>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Jaar ervaring & projecten</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-label">Portfolio</span>
-                <h2 class="section-title">Discover How We Strengthen Your Business Online</h2>
-                <p class="section-description">Case studies of successful projects that deliver real results</p>
+            <div class="scroll-indicator">
+                <a href="#about" class="scroll-arrow" aria-label="Naar Over mij">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
             </div>
-            
-            <div class="portfolio-grid">
-                <!-- Portfolio Item 1 -->
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-image">
-                        <img src="images/project-1.jpg" alt="Freelance Graphic Designer">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-overlay-content">
-                                <h3>Freelance Graphic Designer</h3>
-                                <p>Creative graphic materials & brand consistency</p>
-                                <button class="btn btn-white btn-sm" onclick="openPortfolioModal('project1')">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Freelance Graphic Designer</h3>
-                        <p class="portfolio-description">Designed creative graphic materials aligned with clients' brand styles. Managed social media accounts to increase online visibility and executed marketing campaigns.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Graphic Design</span>
-                            <span class="tag">Social Media</span>
-                            <span class="tag">Marketing</span>
-                        </div>
-                    </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Over mij</span>
+                    <h2 class="section-title">Technologie, ondersteuning en maatschappelijke impact</h2>
+                    <p class="section-description">Een professioneel profiel met een combinatie van techniek, digitale vaardigheden en samenwerking.</p>
                 </div>
 
-                <!-- Portfolio Item 2 -->
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="portfolio-image">
-                        <img src="images/project-2.jpg" alt="PintonSmooth Graphic Design">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-overlay-content">
-                                <h3>PintonSmooth Graphic Design</h3>
-                                <p>Visual content & social media management</p>
-                                <button class="btn btn-white btn-sm" onclick="openPortfolioModal('project2')">View Details</button>
-                            </div>
-                        </div>
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right">
+                        <img src="images/diaaeddin.jpg" alt="Diaaeddin Alhussein" class="profile-img">
+                        <div class="image-decoration"></div>
                     </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">PintonSmooth Graphic Design</h3>
-                        <p class="portfolio-description">Designed visual content and advertisements for company products. Managed social media pages and improved brand's online presence with creative designs and content planning. (Aug 2021 – Feb 2022)</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Graphic Design</span>
-                            <span class="tag">Social Media</span>
-                            <span class="tag">Branding</span>
+
+                    <div class="about-text" data-aos="fade-left">
+                        <p class="about-description">
+                            Ik ben een <strong>gemotiveerde en leergierige ICT-professional</strong> met interesse in digitale ondersteuning, AV/ICT, websites en technologie. Ik heb ervaring met technische installaties, ICT-support, digitale communicatie, grafisch ontwerp en het begeleiden van gebruikers.
+                        </p>
+
+                        <p class="about-description">
+                            In mijn huidige werk bij <strong>2Orange audiovisueel & ICT BV</strong> ontwikkel ik mij verder als AV-ICT Monteur / AV & ICT Integrator. Ik werk aan technische installaties en leer continu bij op het gebied van audiovisuele systemen, connectiviteit en praktische probleemoplossing.
+                        </p>
+
+                        <p class="about-description">
+                            Daarnaast heb ik via verschillende functies, opleidingen en vrijwilligersrollen ervaring opgebouwd met <strong>klantcontact, samenwerken, organisatie, interculturele communicatie en digitale ondersteuning</strong>. Mijn doel is om mij verder te ontwikkelen binnen ICT, AV-techniek en digitale oplossingen en technologie te gebruiken om echte waarde te creëren.
+                        </p>
+
+                        <div class="about-skills">
+                            <span class="skill-tag"><i class="fas fa-language"></i> Nederlands B1+</span>
+                            <span class="skill-tag"><i class="fas fa-language"></i> Engels A1+</span>
+                            <span class="skill-tag"><i class="fas fa-language"></i> Arabisch – moedertaal</span>
                         </div>
+
+                        <a href="https://www.linkedin.com/in/diaaeddin-alhussein/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            Bekijk LinkedIn <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Portfolio Item 3 -->
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="portfolio-image">
-                        <img src="images/project-3.jpg" alt="Llinki.ws Social Media Marketing">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-overlay-content">
-                                <h3>Llinki.ws</h3>
-                                <p>Social Media Marketing Specialist</p>
-                                <button class="btn btn-white btn-sm" onclick="openPortfolioModal('project3')">View Details</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Llinki.ws - Social Media Marketing</h3>
-                        <p class="portfolio-description">Helped set up simple marketing strategies for small businesses to promote their products and services online. Managed social media pages and ads to increase engagement and visibility.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Social Media</span>
-                            <span class="tag">Marketing Strategy</span>
-                            <span class="tag">Ads Management</span>
-                        </div>
-                    </div>
+        <section class="profile-highlights">
+            <div class="container">
+                <div class="highlight-grid">
+                    <article class="highlight-card" data-aos="fade-up">
+                        <div class="highlight-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                        <h3>Techniek</h3>
+                        <p>AV-installatie, ICT-support, hardware, software, connectiviteit en technische probleemoplossing.</p>
+                    </article>
+                    <article class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="highlight-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>AV & Connectiviteit</h3>
+                        <p>Ervaring met AV-signalen, distributie, video, audio, networking en technische bekabeling.</p>
+                    </article>
+                    <article class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="highlight-icon"><i class="fas fa-people-group"></i></div>
+                        <h3>Samenwerking</h3>
+                        <p>Praktisch samenwerken met collega's, vrijwilligers, gebruikers en verschillende doelgroepen.</p>
+                    </article>
+                    <article class="highlight-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="highlight-icon"><i class="fas fa-pen-nib"></i></div>
+                        <h3>Digitale creativiteit</h3>
+                        <p>Grafisch ontwerp, social media, content en digitale ondersteuning voor organisaties en kleine bedrijven.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Ervaring</span>
+                    <h2 class="section-title">Werkervaring & professionele ontwikkeling</h2>
+                    <p class="section-description">Van technische montage en AV/ICT tot digitale content en grafisch ontwerp.</p>
                 </div>
 
-                <!-- Portfolio Item 4 -->
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="portfolio-image">
-                        <img src="images/project-4.jpg" alt="Albeda College ICT Assistant Internship">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-overlay-content">
-                                <h3>Albeda College</h3>
-                                <p>Educational ICT Assistant Internship</p>
-                                <button class="btn btn-white btn-sm" onclick="openPortfolioModal('project4')">View Details</button>
+                <div class="timeline">
+                    <article class="timeline-item featured" data-aos="fade-up">
+                        <div class="timeline-dot"><i class="fas fa-bolt"></i></div>
+                        <div class="timeline-card">
+                            <div class="timeline-top">
+                                <div>
+                                    <span class="timeline-period">Juli 2026 – heden</span>
+                                    <h3>AV & ICT Integrator / Technische installatie</h3>
+                                    <p class="timeline-company">2Orange audiovisueel & ICT BV</p>
+                                </div>
+                                <span class="timeline-badge">Huidige functie</span>
+                            </div>
+                            <p>Gestart als AV-ICT Monteur. Ik werk mee aan technische installaties en ontwikkel mijn kennis binnen audiovisuele en ICT-oplossingen. Mijn focus ligt op zorgvuldig werken, blijven leren en een actieve bijdrage leveren aan het team.</p>
+                            <div class="tag-list">
+                                <span class="tag">AV-techniek</span>
+                                <span class="tag">ICT Support</span>
+                                <span class="tag">Technische installatie</span>
+                                <span class="tag">Informatietechnologie</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Albeda College - ICT Assistant</h3>
-                        <p class="portfolio-description">Helped students and teachers with technical issues on computers, devices, and school accounts. Provided practical classroom support and assistance with digital tools.</p>
-                        <div class="portfolio-tags">
+                    </article>
+
+                    <article class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-dot"><i class="fas fa-industry"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-period">Juni 2025 – september 2025</span>
+                            <h3>Assembly Technician</h3>
+                            <p class="timeline-company">KROHNE</p>
+                            <p>Technische assemblage en kwaliteitscontrole. Ervaring opgedaan met nauwkeurig werken, aanpassingsvermogen en samenwerken in een productieomgeving met een hoog tempo.</p>
+                            <div class="tag-list">
+                                <span class="tag">Technische assemblage</span>
+                                <span class="tag">Kwaliteitscontrole</span>
+                                <span class="tag">Aanpassingsvermogen</span>
+                                <span class="tag">Organisatievaardigheden</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-dot"><i class="fas fa-palette"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-period">2024 – 2025</span>
+                            <h3>Grafisch ontwerper</h3>
+                            <p class="timeline-company">NOUR Marketing</p>
+                            <p>Ontwerpen van visuele content en marketingmateriaal en bijdragen aan online communicatie en community building.</p>
+                            <div class="tag-list">
+                                <span class="tag">Grafisch ontwerp</span>
+                                <span class="tag">Content</span>
+                                <span class="tag">Marketing</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-dot"><i class="fas fa-laptop-code"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-period">Januari 2021 – december 2022</span>
+                            <h3>Digital Operations & Content Specialist (Freelance)</h3>
+                            <p class="timeline-company">Freelance</p>
+                            <p>Beheren van digitale content en administratieve workflows voor remote klanten. Ondersteuning bij contentmarketing, digitale aanwezigheid en projectcoördinatie.</p>
+                            <div class="tag-list">
+                                <span class="tag">Digital Operations</span>
+                                <span class="tag">Content</span>
+                                <span class="tag">Projectcoördinatie</span>
+                                <span class="tag">Remote support</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-dot"><i class="fas fa-pen"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-period">2022</span>
+                            <h3>Lead Graphic Designer</h3>
+                            <p class="timeline-company">Alnasser Group • Dubai</p>
+                            <p>Leiding over grafisch ontwerp en visuele content, met aandacht voor merkconsistentie en digitale communicatie.</p>
+                            <div class="tag-list">
+                                <span class="tag">Graphic Design</span>
+                                <span class="tag">Visual Content</span>
+                                <span class="tag">Branding</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-dot"><i class="fas fa-hashtag"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-period">2021 – 2022</span>
+                            <h3>Grafisch ontwerper & Social Media</h3>
+                            <p class="timeline-company">PintonSmooth</p>
+                            <p>Ondersteunen van promotionele content, productfotografie en social media-content om de online zichtbaarheid van het bedrijf te versterken.</p>
+                            <div class="tag-list">
+                                <span class="tag">Social Media</span>
+                                <span class="tag">Grafisch ontwerp</span>
+                                <span class="tag">Content creation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-dot"><i class="fas fa-school"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-period">Januari 2024 – oktober 2024</span>
+                            <h3>IT Support Specialist</h3>
+                            <p class="timeline-company">Albeda Startcollege</p>
+                            <p>Ondersteuning bij digitale en technische vragen binnen een onderwijsomgeving en hulp bij het gebruik van ICT-middelen.</p>
+                            <div class="tag-list">
+                                <span class="tag">ICT Support</span>
+                                <span class="tag">Onderwijs</span>
+                                <span class="tag">Digitale ondersteuning</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Opleiding</span>
+                    <h2 class="section-title">Opleiding & leertrajecten</h2>
+                </div>
+
+                <div class="cards-grid two-col">
+                    <article class="info-card" data-aos="fade-up">
+                        <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="card-period">Albeda College</span>
+                        <h3>Albeda mbo alumni</h3>
+                        <p class="card-subtitle">Taalschakeltraject B1 • ICT Support</p>
+                        <p>Ontwikkeling van Nederlandse taalvaardigheid en ICT-gerelateerde basisvaardigheden binnen het mbo-traject.</p>
+                        <div class="tag-list">
+                            <span class="tag">Nederlands B1</span>
                             <span class="tag">ICT Support</span>
-                            <span class="tag">Technical Help</span>
-                            <span class="tag">Education</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </article>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-label">Services</span>
-                <h2 class="section-title">What I Can Do For You</h2>
-                <p class="section-description">Digital design, marketing, and community support services for startups, local businesses, and individuals</p>
-            </div>
-            
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3 class="service-title">Graphic Design</h3>
-                    <p class="service-description">
-                        Visual design using Photoshop and Canva. Creating brochures, flyers, social media posts, product advertisements, and promotional materials that help communicate your message effectively.
-                    </p>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 class="service-title">Web Development</h3>
-                    <p class="service-description">
-                        Learning and developing websites using HTML, CSS, JavaScript, and WordPress. Building simple frontend interfaces and basic website modifications for small businesses and personal projects.
-                    </p>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3 class="service-title">Digital Marketing</h3>
-                    <p class="service-description">
-                        Social media management for Facebook and Instagram, content creation, basic paid advertising setup, and simple SEO practices. Helping small businesses improve their online presence and connect with their local community.
-                    </p>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h3 class="service-title">Google Maps Business</h3>
-                    <p class="service-description">
-                        Professional management of Google Maps business listings. Optimize your local presence, improve visibility, and help customers find your business easily.
-                    </p>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <h3 class="service-title">ICT Support</h3>
-                    <p class="service-description">
-                        Basic technical support for educational settings and individuals. Learning through my Albeda College internship, helping with simple hardware/software troubleshooting, user account issues, and basic digital tools setup.
-                    </p>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3 class="service-title">Community & Business Support</h3>
-                    <p class="service-description">
-                        Supporting individuals with limited knowledge of Dutch legal matters, government procedures, and daily digital tools. Helping with government apps, social platforms, and guiding small businesses (restaurants, shops) through basic digital transformation in the Netherlands.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="reviews">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-label">Reviews</span>
-                <h2 class="section-title">What Clients Say</h2>
-                <p class="section-description">Don't just take our word for it — hear from businesses we've helped grow</p>
-            </div>
-            
-            <div class="testimonials-slider">
-                <div class="testimonial-track" id="testimonialTrack">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                    <article class="info-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="info-icon"><i class="fas fa-compass"></i></div>
+                        <span class="card-period">Oktober 2023 – februari 2024</span>
+                        <h3>Ithaka Academie</h3>
+                        <p class="card-subtitle">Vocational Training – IT & Orientation</p>
+                        <p>IT-programma met aandacht voor persoonlijke ontwikkeling, arbeidsmarktoriëntatie, professionele vaardigheden en uitbreiding van het netwerk.</p>
+                        <div class="tag-list">
+                            <span class="tag">IT-programma</span>
+                            <span class="tag">Arbeidsmarkt</span>
+                            <span class="tag">Persoonlijke ontwikkeling</span>
                         </div>
-                        <p class="testimonial-text">
-                            "Working with Diaaeddin transformed our online presence. The strategic approach and creative execution exceeded our expectations."
-                        </p>
-                        <div class="testimonial-author">
-                            <img src="images/client-1.jpg" alt="Sarah Johnson" class="author-img">
-                            <div class="author-info">
-                                <h4 class="author-name">Sarah Johnson</h4>
-                                <p class="author-position">CEO, TechFlow Solutions</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications" id="certifications">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Certificaten & licenties</span>
+                    <h2 class="section-title">Technische certificeringen</h2>
+                    <p class="section-description">Recente certificaten gericht op AV-signalen, connectiviteit, video, audio en networking.</p>
+                </div>
+
+                <div class="cert-grid">
+                    <article class="cert-card" data-aos="fade-up">
+                        <div class="cert-logo">EXTRON</div>
+                        <div class="cert-content">
+                            <span class="cert-date">September 2026</span>
+                            <h3>Connectivity Principles</h3>
+                            <p>Principes voor AV-connectiviteit en signaalverbindingen.</p>
+                            <span class="cert-id">Credential ID: 1139946</span>
+                            <div class="tag-list">
+                                <span class="tag">Cabling</span>
+                                <span class="tag">AV Connectivity Management</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                    <article class="cert-card" data-aos="fade-up" data-aos-delay="75">
+                        <div class="cert-logo">EXTRON</div>
+                        <div class="cert-content">
+                            <span class="cert-date">September 2026</span>
+                            <h3>Signal Processing and Distribution Principles</h3>
+                            <p>Basisprincipes voor AV-signaalverwerking en distributie.</p>
+                            <span class="cert-id">Credential ID: 1139946</span>
+                            <div class="tag-list">
+                                <span class="tag">Signal Processing</span>
+                                <span class="tag">Distribution</span>
+                            </div>
                         </div>
-                        <p class="testimonial-text">
-                            "Diaa begreep meteen wat we nodig hadden voor onze brochure. Hij dacht mee, werkte snel en leverde een strak en creatief resultaat op. Prettige samenwerking en zeker een aanrader!"
-                        </p>
+                    </article>
+
+                    <article class="cert-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="cert-logo">EXTRON</div>
+                        <div class="cert-content">
+                            <span class="cert-date">September 2026</span>
+                            <h3>Video Principles</h3>
+                            <p>Video, videostromen en audiovisuele systemen.</p>
+                            <span class="cert-id">Credential ID: 1139946</span>
+                            <div class="tag-list">
+                                <span class="tag">Video</span>
+                                <span class="tag">Video Signal Flow</span>
+                                <span class="tag">Systems</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cert-card" data-aos="fade-up" data-aos-delay="225">
+                        <div class="cert-logo">EXTRON</div>
+                        <div class="cert-content">
+                            <span class="cert-date">September 2026</span>
+                            <h3>Audio Principles</h3>
+                            <p>Basisprincipes voor audio en audiovisuele systemen.</p>
+                            <span class="cert-id">Credential ID: 1139946</span>
+                            <div class="tag-list">
+                                <span class="tag">Audio-Visual (AV)</span>
+                                <span class="tag">Audio Systems Technology</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cert-logo">EXTRON</div>
+                        <div class="cert-content">
+                            <span class="cert-date">September 2026</span>
+                            <h3>Networking Principles</h3>
+                            <p>Netwerkprincipes voor AV-omgevingen en IP-gebaseerde systemen.</p>
+                            <span class="cert-id">Credential ID: 1139946</span>
+                            <div class="tag-list">
+                                <span class="tag">TCP/IP</span>
+                                <span class="tag">Computer Networks</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cert-card" data-aos="fade-up" data-aos-delay="375">
+                        <div class="cert-logo ithaka">ITHAKA</div>
+                        <div class="cert-content">
+                            <span class="cert-date">Februari 2024</span>
+                            <h3>Arbeidsmarkt Fit programma</h3>
+                            <p>Certificaat voor deelname aan het Arbeidsmarkt Fit-programma van Ithaka Academie.</p>
+                            <div class="tag-list">
+                                <span class="tag">Arbeidsmarkt</span>
+                                <span class="tag">Professionele ontwikkeling</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Vaardigheden</span>
+                    <h2 class="section-title">Technische, digitale & sociale vaardigheden</h2>
+                </div>
+
+                <div class="skill-cloud" data-aos="fade-up">
+                    <span>AV-techniek</span>
+                    <span>ICT Support</span>
+                    <span>Technische installatie</span>
+                    <span>Hardware Installation</span>
+                    <span>Software Installation</span>
+                    <span>Problem Solving</span>
+                    <span>AV Connectivity</span>
+                    <span>Signal Processing</span>
+                    <span>Signal Distribution</span>
+                    <span>Video Signal Flow</span>
+                    <span>Audio Systems</span>
+                    <span>TCP/IP</span>
+                    <span>Computer Networks</span>
+                    <span>Grafisch ontwerp</span>
+                    <span>Social Media</span>
+                    <span>Content Creation</span>
+                    <span>Communicatie</span>
+                    <span>Interculturele samenwerking</span>
+                    <span>Aanpassingsvermogen</span>
+                    <span>Organisatievaardigheden</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="volunteer" id="volunteer">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Vrijwilligerswerk</span>
+                    <h2 class="section-title">Bijdragen aan de gemeenschap</h2>
+                    <p class="section-description">Ervaring met organiseren, ondersteunen, samenwerken en contact met verschillende doelgroepen.</p>
+                </div>
+
+                <div class="cards-grid">
+                    <article class="info-card" data-aos="fade-up">
+                        <div class="info-icon"><i class="fas fa-utensils"></i></div>
+                        <span class="card-period">April 2023 – april 2026</span>
+                        <h3>Projectcoördinator & Vrijwilliger</h3>
+                        <p class="card-subtitle">BuurtBuik • Rotterdam</p>
+                        <p>Meewerken aan het organiseren en uitvoeren van activiteiten, samenwerken met vrijwilligers en verschillende mensen uit de wijk en bijdragen aan een inclusieve sociale buurt.</p>
+                        <div class="tag-list"><span class="tag">Projectcoördinatie</span><span class="tag">Communicatie</span><span class="tag">Interculturele samenwerking</span></div>
+                    </article>
+
+                    <article class="info-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="info-icon"><i class="fas fa-person-walking"></i></div>
+                        <span class="card-period">Mei 2024 – januari 2026</span>
+                        <h3>Vrijwilliger</h3>
+                        <p class="card-subtitle">Gelukswandelingen • Rotterdam</p>
+                        <p>Gezelschap en ondersteuning voor ouderen, met aandacht voor communicatie in het Nederlands en sociale vaardigheden.</p>
+                        <div class="tag-list"><span class="tag">Communicatie</span><span class="tag">Sociale vaardigheden</span></div>
+                    </article>
+
+                    <article class="info-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="info-icon"><i class="fas fa-people-roof"></i></div>
+                        <span class="card-period">Februari 2024 – oktober 2025</span>
+                        <h3>Participation Assistant</h3>
+                        <p class="card-subtitle">Stichting Nieuw Thuis Rotterdam</p>
+                        <p>Ondersteunen van deelnemers bij participatieactiviteiten en helpen bij praktische integratie en contact met de organisatie.</p>
+                        <div class="tag-list"><span class="tag">Participatie</span><span class="tag">Ondersteuning</span></div>
+                    </article>
+
+                    <article class="info-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="info-icon"><i class="fas fa-hands-helping"></i></div>
+                        <span class="card-period">Februari 2025 – april 2025</span>
+                        <h3>Vrijwilliger</h3>
+                        <p class="card-subtitle">Pauluskerk Rotterdam</p>
+                        <p>Ondersteuning binnen activiteiten die gericht zijn op mensgerichte hulp en betrokkenheid bij de gemeenschap.</p>
+                        <div class="tag-list"><span class="tag">Mensenrechten</span><span class="tag">Community</span></div>
+                    </article>
+
+                    <article class="info-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="info-icon"><i class="fas fa-network-wired"></i></div>
+                        <span class="card-period">Januari 2023 – december 2025</span>
+                        <h3>Vrijwilliger</h3>
+                        <p class="card-subtitle">Netwerk Nieuw Rotterdam</p>
+                        <p>Meewerken aan sociale en maatschappelijke vrijwilligersactiviteiten, samenwerken met jongeren en vrijwilligers met verschillende achtergronden en bijdragen aan activiteiten voor de Rotterdamse samenleving.</p>
+                        <div class="tag-list"><span class="tag">Sociale dienstverlening</span><span class="tag">Samenwerking</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Portfolio</span>
+                    <h2 class="section-title">Digitale projecten & creatieve ervaring</h2>
+                    <p class="section-description">Een selectie van werk rond ontwerp, content, social media en digitale ondersteuning.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-item" data-aos="fade-up">
+                        <div class="portfolio-image"><img src="images/project-1.jpg" alt="Grafisch ontwerp en digitale marketing"></div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Grafisch ontwerp & marketing</h3>
+                            <p class="portfolio-description">Visuele content, social media en promotiemateriaal voor organisaties en kleine bedrijven.</p>
+                            <div class="portfolio-tags"><span class="tag">Design</span><span class="tag">Social Media</span><span class="tag">Marketing</span></div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="portfolio-image"><img src="images/project-2.jpg" alt="Social media content en branding"></div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Content & branding</h3>
+                            <p class="portfolio-description">Ondersteuning bij branding, contentplanning en online zichtbaarheid.</p>
+                            <div class="portfolio-tags"><span class="tag">Branding</span><span class="tag">Content</span><span class="tag">Online presence</span></div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="portfolio-image"><img src="images/project-3.jpg" alt="Digitale ondersteuning voor kleine bedrijven"></div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Digitale ondersteuning</h3>
+                            <p class="portfolio-description">Websites, Google Maps-bedrijfsprofielen, social media en praktische digitale ondersteuning.</p>
+                            <div class="portfolio-tags"><span class="tag">Web</span><span class="tag">Google Maps</span><span class="tag">ICT</span></div>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="portfolio-image"><img src="images/project-4.jpg" alt="Onderwijs en ICT support"></div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Onderwijs & ICT-support</h3>
+                            <p class="portfolio-description">Praktische digitale ondersteuning voor gebruikers in een onderwijsomgeving.</p>
+                            <div class="portfolio-tags"><span class="tag">ICT Support</span><span class="tag">Education</span><span class="tag">Technical Help</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="reviews">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Aanbevelingen</span>
+                    <h2 class="section-title">Wat anderen over mijn samenwerking zeggen</h2>
+                    <p class="section-description">Aanbevelingen gebaseerd op samenwerking, vrijwilligerswerk en professionele ontwikkeling.</p>
+                </div>
+
+                <div class="recommendation-grid" id="testimonialTrack">
+                    <article class="testimonial-card recommendation-card" data-aos="fade-up">
+                        <div class="testimonial-rating" aria-label="Aanbeveling"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">“Dank je wel voor je berekenbaarheid en enthousiasme. Je was altijd op tijd, aanwezig en in gesprek met de mensen. Je goede zorgen voor de vrijwilligers liet mensen zich welkom en gezien voelen. Je kan koken, gastvrij zijn en ook nog eens onze ideeën voor flyers en video's omzetten naar werkelijkheid. Een echte duizendpoot met zijn hart op de goede plek.”</p>
                         <div class="testimonial-author">
                             <img src="images/client-2.jpg" alt="Stijn Herpers" class="author-img">
                             <div class="author-info">
                                 <h4 class="author-name">Stijn Herpers</h4>
-                                <p class="author-position">Vrijwilligerscoördinator, BuurtBuik</p>
+                                <p class="author-position">BuurtBuik • aanbeveling, september 2026</p>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Testimonial 3 -->
-                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            "The attention to detail and understanding of our brand vision made all the difference. Highly recommend!"
-                        </p>
+                    <article class="testimonial-card recommendation-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-rating" aria-label="Aanbeveling"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">“I’m happy to recommend my friend Diaa Al-Din. I’ve known Diaa through different courses and workshops that we attended together, and what I’ve always noticed about him is how motivated he is to learn and improve himself. He is a hardworking and determined person who doesn’t give up easily. I’ve seen his interest in ICT and technology grow over time.”</p>
                         <div class="testimonial-author">
-                            <img src="images/client-3.jpg" alt="Emily Rodriguez" class="author-img">
+                            <img src="images/client-3.jpg" alt="Maher Shueai" class="author-img">
                             <div class="author-info">
-                                <h4 class="author-name">Emily Rodriguez</h4>
-                                <p class="author-position">Marketing Director, GreenSpace</p>
+                                <h4 class="author-name">Maher Shueai</h4>
+                                <p class="author-position">IT-Support & Hardware Specialist • aanbeveling, augustus 2026</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-controls">
-                    <button class="testimonial-btn prev-btn" id="prevBtn" aria-label="Previous testimonial">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="testimonial-btn next-btn" id="nextBtn" aria-label="Next testimonial">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </article>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-label">Contact</span>
-                <h2 class="section-title">Let's Work Together</h2>
-                <p class="section-description">Ready to strengthen your brand? Contact us for a free consultation</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <h3>Get In Touch</h3>
-                    <p class="contact-intro">
-                        Have a project in mind? Let's discuss how we can help your business grow through strategic digital marketing.
-                    </p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <a href="mailto:diaaeddin.me@gmail.com">diaaeddin.me@gmail.com</a>
+                    <article class="testimonial-card recommendation-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-rating" aria-label="Aanbeveling"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">“Diaaeddin is zeer hardwerkend, leert snel, past zich gemakkelijk aan en beschikt over uitstekende vaardigheden en talenten. Ik beveel hem van harte aan.”</p>
+                        <div class="testimonial-author">
+                            <div class="author-img author-placeholder"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h4 class="author-name">Mustafa Khaled</h4>
+                                <p class="author-position">Trainer • Interculturele Mediator</p>
                             </div>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <a href="tel:+31840727095">+31 84 072 7095</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Location</h4>
-                                <p>Rotterdam, Netherlands • Remote • Worldwide</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/diaaeddin-alhussein/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://x.com/Diaaeddinme" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/diaaeddin.me/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/Diaaeddin.me" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-                
-                <div class="contact-form-wrapper" data-aos="fade-left">
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                            <span class="error-message" id="nameError"></span>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                            <span class="error-message" id="emailError"></span>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
-                            <span class="error-message" id="messageError"></span>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <span class="btn-text">Free Consultation</span>
-                            <span class="btn-loader" style="display: none;">
-                                <i class="fas fa-spinner fa-spin"></i>
-                            </span>
-                        </button>
-                        
-                        <div class="form-message" id="formMessage"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+                    </article>
 
-    <!-- Footer -->
+                    <article class="testimonial-card recommendation-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-rating" aria-label="Aanbeveling"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">“Persistent, active person who loves to learn. Diaa is someone who keeps moving forward, learns from experience and builds his future step by step.”</p>
+                        <div class="testimonial-author">
+                            <div class="author-img author-placeholder"><i class="fas fa-user"></i></div>
+                            <div class="author-info">
+                                <h4 class="author-name">Nureddin Alhussein</h4>
+                                <p class="author-position">IT • aanbeveling</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="testimonial-controls" aria-hidden="true">
+                    <button class="testimonial-btn prev-btn" id="prevBtn" aria-label="Vorige aanbeveling"><i class="fas fa-chevron-left"></i></button>
+                    <button class="testimonial-btn next-btn" id="nextBtn" aria-label="Volgende aanbeveling"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Expertise</span>
+                    <h2 class="section-title">Waar ik mij professioneel op richt</h2>
+                    <p class="section-description">Een combinatie van technische, digitale en creatieve vaardigheden.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card" data-aos="fade-up">
+                        <div class="service-icon"><i class="fas fa-display"></i></div>
+                        <h3 class="service-title">AV & technische installatie</h3>
+                        <p class="service-description">Installatie en ondersteuning van audiovisuele en technische systemen, met aandacht voor connectiviteit, bekabeling en praktische probleemoplossing.</p>
+                    </article>
+
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon"><i class="fas fa-headset"></i></div>
+                        <h3 class="service-title">ICT Support</h3>
+                        <p class="service-description">Praktische ondersteuning bij hardware, software, accounts, digitale hulpmiddelen en gebruikersvragen.</p>
+                    </article>
+
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3 class="service-title">Connectiviteit & networking</h3>
+                        <p class="service-description">Basiskennis van TCP/IP, computernetwerken, AV-signalen en netwerkgerichte audiovisuele toepassingen.</p>
+                    </article>
+
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3 class="service-title">Web & digitale ondersteuning</h3>
+                        <p class="service-description">Websites, basis frontend-ontwikkeling, WordPress, Google Maps-bedrijfsprofielen en online content.</p>
+                    </article>
+
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon"><i class="fas fa-palette"></i></div>
+                        <h3 class="service-title">Grafisch ontwerp & content</h3>
+                        <p class="service-description">Grafisch ontwerp, social media-content, flyers, advertenties en visuele communicatie.</p>
+                    </article>
+
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-icon"><i class="fas fa-people-arrows"></i></div>
+                        <h3 class="service-title">Community support</h3>
+                        <p class="service-description">Mensen praktisch ondersteunen, samenwerken met verschillende doelgroepen en bijdragen aan inclusieve activiteiten.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-title">Neem contact op</h2>
+                    <p class="section-description">Voor samenwerking, technische vragen, digitale projecten of professionele contacten.</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3>Diaaeddin Alhussein</h3>
+                        <p class="contact-intro">AV & ICT Integrator met interesse in technische installatie, ICT-support, AV-techniek en digitale oplossingen.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="contact-text">
+                                    <h4>E-mail</h4>
+                                    <a href="mailto:diaaeddin.me@gmail.com">diaaeddin.me@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                                <div class="contact-text">
+                                    <h4>Telefoon</h4>
+                                    <a href="tel:+31840727095">+31 84 072 7095</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                                <div class="contact-text">
+                                    <h4>Locatie</h4>
+                                    <p>Rotterdam, Nederland</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                                <div class="contact-text">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/diaaeddin-alhussein/" target="_blank" rel="noopener noreferrer">linkedin.com/in/diaaeddin-alhussein/</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/diaaeddin-alhussein/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/diaaeddin.me/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/Diaaeddin.me" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="mailto:diaaeddin.me@gmail.com" class="social-link" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper" data-aos="fade-left">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Naam *</label>
+                                <input type="text" id="name" name="name" placeholder="Je naam" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="jouw@email.nl" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefoon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Bericht *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Vertel kort waar je contact over wilt opnemen..." required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span class="btn-text">Bericht versturen</span>
+                                <span class="btn-loader" style="display:none;"><i class="fas fa-spinner fa-spin"></i></span>
+                            </button>
+
+                            <div class="form-message" id="formMessage"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <h3 class="footer-title">Al-Noor Marketing</h3>
-                    <p class="footer-subtitle">by Diaaeddin</p>
-                    <p class="footer-description">Creative marketing solutions that drive growth</p>
+                    <h3 class="footer-title">Diaaeddin Alhussein</h3>
+                    <p class="footer-subtitle">AV • ICT • Technology</p>
+                    <p class="footer-description">Technische ondersteuning, AV/ICT-integratie, digitale oplossingen en maatschappelijke betrokkenheid.</p>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4 class="footer-heading">Services</h4>
+                    <h4 class="footer-heading">Profiel</h4>
                     <ul class="footer-links">
-                        <li><a href="#services">Brand Design</a></li>
-                        <li><a href="#services">Website Development</a></li>
-                        <li><a href="#services">Digital Marketing</a></li>
-                        <li><a href="#services">SEO Optimization</a></li>
+                        <li><a href="#about">Over mij</a></li>
+                        <li><a href="#experience">Ervaring</a></li>
+                        <li><a href="#education">Opleiding</a></li>
+                        <li><a href="#certifications">Certificaten</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4 class="footer-heading">Company</h4>
+                    <h4 class="footer-heading">Extra</h4>
                     <ul class="footer-links">
+                        <li><a href="#volunteer">Vrijwilligerswerk</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#reviews">Testimonials</a></li>
+                        <li><a href="#reviews">Aanbevelingen</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4 class="footer-heading">Contact</h4>
+                    <h4 class="footer-heading">Online</h4>
                     <ul class="footer-links">
-                        <li><a href="mailto:diaaeddin.me@gmail.com">diaaeddin.me@gmail.com</a></li>
-                        <li><a href="tel:+31840727095">+31 84 072 7095</a></li>
+                        <li><a href="https://www.linkedin.com/in/diaaeddin-alhussein/" target="_blank" rel="noopener noreferrer">LinkedIn-profiel</a></li>
+                        <li><a href="mailto:diaaeddin.me@gmail.com">E-mail</a></li>
+                        <li><a href="tel:+31840727095">Telefoon</a></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p class="copyright">© 2025 Al-Noor Marketing by Diaaeddin. All rights reserved.</p>
+                <p class="copyright">© 2026 Diaaeddin Alhussein. Alle rechten voorbehouden.</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <span>•</span>
-                    <a href="#">Terms of Service</a>
+                    <span>Rotterdam, Nederland</span>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <button class="scroll-top" id="scrollTop" aria-label="Naar boven">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
-    <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
 </body>
 </html>
